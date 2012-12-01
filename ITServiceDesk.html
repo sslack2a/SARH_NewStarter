@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title>New Starter Form - Manager</title>
+<title>New Starter Form - ITServiceDesk</title>
 
 <link href="Assets/css/contact.css" rel="stylesheet" type="text/css" /> <!-- AJAX Contact Form Stylesheet -->
  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
@@ -15,15 +15,6 @@
 <!--[if IE]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-  <script>
-  $(function() {
-        $( "#datepicker" ).datepicker({
-            showButtonPanel: true
-        });
-    });
-    </script>
-
-
 </head>
 <body>
 
@@ -32,7 +23,7 @@
 		<header>
 
 			<h1>SARH New Starter Form</h1>
-			<p>Please enter details for the new starter!! Some details have been completed by <strong>HR</strong> already.</p>
+			<p>A request for a new starter has been submitted. Please see the information below required to created the nescessary accounts.</p>
 
 		</header>
 
@@ -46,58 +37,42 @@
 
 				<div>
 					<label for="name" accesskey="U">First Name</label>
-					<input name="name" type="text" id="name" placeholder="Enter First Name" required="required" readonly="True" />
+					<input name="name" type="text" id="name"  readonly="True" />
 				</div>
 				<div>
 					<label for="email" accesskey="E">Last Name</label>
-					<input name="email" type="email" id="email" placeholder="Enter Last Name" required="required" readonly="True"/>
+					<input name="email" type="email" id="email" readonly="True"/>
 				</div>
 
 				<div>
 					<label for="phone" accesskey="P">Payrol No.</label>
-					<input name="phone" type="tel" id="phone" size="30" placeholder="Enter Payrol Number"readonly="True"/>
+					<input name="phone" type="tel" id="phone" size="30" readonly="True"/>
 				</div>
 
 				<div>
 					<label for="website" accesskey="W">Annual Leave</label>
-					<input name="website" type="url" id="website" placeholder="Enter Entitlement"readonly="True" />
+					<input name="website" type="url" id="website" readonly="True" />
 				</div>
 				<div>
 					<label for="Section" accesskey="D">Section</label>
-					<select name="Section" id="Section" required="required" readonly="True">
-						<option value=""></option>
-						<option value="Asset Management">Asset Management</option>
-						<option value="Finance">Finance</option>
-						<option value="IT">IT</option>
-					</select>
+					<input id="Section_txt" type="text" readonly="true"  />
 				</div>
 
 			</fieldset>
 
 			<fieldset>
 
-				<legend>Further Details</legend>
-				<span style="Color:Red"><small>To be completed by manager</small></span>
-<p>
-Please select an existing member of staff to copy. This will enable us to ensure they have the correct permissions.
-</p>
-				<div>
-					<label for="subject" accesskey="S">Name</label>
-					<select name="subject" id="subject" required="required">
-						<option value=""></option>
-						<option value="Support">Steve Slack</option>
-						<option value="A Sale">Paul Chapman</option>
-						<option value="A Bug fix">Jon Moxon</option>
-					</select>
-				</div>
+				<legend>Manager Details</legend>
 
-<p>
-Every new member of staff is required to have an IT induction. Please select a date below, ideally this will be the start date.
-</p>
+				<div>
+					<label for="subject" accesskey="S">Managers Name</label>
+				<input id="Name_txt" type="text" readonly="true"  />
+				</div>
+<p>They wish to program the IT induction on the following day. Please respond with a convienet time.</p>
 
 				<div>
 				<label for="Date" accesskey="E">Date</label>
-				 <input type="text" id="datepicker" placeholder="Select a Date" /></div>
+				 <input type="text" id="text_date" readonly="true" /></div>
 				 
 				 <p>Please select from the options below as to which they will require.</p>
 				 <div>
